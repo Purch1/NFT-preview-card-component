@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Jomhuria&family=Open+Sans:ital,wght@1,300&family=Outfit:wght@500&family=Work+Sans:wght@200;300;400;500;600;700&display=swap");
+
+:root{
+    /*------Primary---------*/
+    --Soft0blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+        /*------Neutral---------*/
+--Very-dark-blue-main-BG: hsl(215, 60%, 8%);
+--Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+--Very-dark-blue-line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body {
+    font-family: "Outfit" sans-serif ;
+    color: var(--Cyan);
+    background: var(--Very-dark-blue-main-BG);
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .card{
+    width: 80%;
+    max-width: 32rem;
+    background: var(--Very-dark-blue-card-BG);
+    border-radius: 1.6rem;
+    padding: 1.9rem ;
+    padding-bottom: 4rem;
+    box-shadow: 0 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.02), 0 1rem 1rem 1rem rgba(0, 0, 0, 0.02);
+}
+
+.container .card .photo{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.container .card h1{
+    font-family: outfit;
+    font-size: 30px;
+    font-weight:600;
+    letter-spacing: 0.2rem;
+    padding: 1.8rem 0rem 1.6rem 0rem;
+    color: var(--White);
+}
+.container .card p{
+    font-family: outfit;
+    font-size: 25px;
+    font: weight 3px;;
+    padding:0rem 0rem 1.6rem 0rem;
+    letter-spacing: 0.05rem;
+    color: var(--Soft0blue);
+}
+
+.container .card .pricing{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .card .eth{
+    display: flex;
+    align-items: center;
+    justify-self: space-between;
+}
+
+.container .card .pricing .eth .img{
+    width: 19px;
+    margin-right: 0.8rem;
+}
+
+.container .card .pricing .eth{
+    font-size: 18px;
+    font-family: outfit;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+}
+.container .card .time{
+    display: flex;
+    /* font-size: 20px;
+    font-family: outfit;
+    letter-spacing: 0.1rem;
+    font-weight: 700; */
+    align-items: center;
+}
+
+.container .card .time img{
+    width: 28px;
+    margin-right: 0.8rem;
+}
+
+.container .card .time h3{
+    font-size: 26px;
+    font-family: outfit;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    color: var(--Soft0blue);
+}
+
+.container .card span{
+    display: flex;
+    border: 1px solid var(--Soft0blue);
+    opacity: 10%;
+    margin: 1.3rem 0rem 1.3rem 0rem;
+}
+
+.container .card .photo{
+    display: flex;
+    align-items: center;
+   
+    
+}
+
+.container .card .photo img{
+    width: 3.5rem;
+    border: 2px solid var(--Soft0blue);
+    border-radius: 50%;
+    margin-right: 1.6rem;
+}
+.container .card .photo h4{
+    font-family: outfit;
+    font-size: 24px;
+    font-weight:400;
+    color: var(--Soft0blue);
+    padding-right:0.5rem ;
+}
+
+.container .card .photo .name{
+    color: var(--White);
+}
+
+.attribution { font-size: 15px; text-align: center; }
+.attribution a { color: hsl(0, 0%, 100%); }
